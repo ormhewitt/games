@@ -1,3 +1,7 @@
 *{
     font-family: Candara;
 }
+hr.rounded {
+  border-top: 8px solid #666;
+  border-radius: 5px;
+}
