@@ -1,6 +1,16 @@
-*{
-    font-family: Candara;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@500&display=swap');
+
+header {
+  font-family: 'Roboto', sans-serif;
+  font-weight:500;
 }
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+}
+
+
 hr.rounded {
   border-top: 8px solid #666;
   border-radius: 5px;
@@ -26,7 +36,7 @@ hr.rounded {
 
 /*I understand button*/
 .button {
-  background-color: #b00b0b;
+  background-color: #2d119c;
   color: white;
   border-radius: 10px;
   border-color: white;
@@ -48,6 +58,7 @@ hr.rounded {
   animation-name: slideIn;
   animation-duration: 0.4s;
   border-radius: 15px 15px 0px 0px;
+  font-family:
 }
 
 /* The Close Button */
@@ -67,7 +78,7 @@ hr.rounded {
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #ff0000;
+  background-color: #0d00ff;
   color: white;
   border-radius: 15px 15px 0px 0px;
 }
