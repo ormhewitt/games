@@ -20,7 +20,7 @@ hr.rounded {
   -webkit-animation-name: fadeIn; /* Fade in the background */
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
   border-radius: 5px;
 }
 
