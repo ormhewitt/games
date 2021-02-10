@@ -29,7 +29,8 @@ hr.rounded {
   background-color: #b00b0b;
   color: white;
   border-radius: 10px;
-  border-color: white
+  border-color: white;
+  float: left;
 
 }
 .button:focus, .button:active {
