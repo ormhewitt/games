@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<head>
+  <title>Oliver's games</title>
 <body>
 <h1>Oliver's games</h1>
 
@@ -21,4 +22,58 @@
 <br>
 <hr class="rounded">
 </a>
+</body>
+
+<body>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Important</h2>
+    </div>
+    <div class="modal-body">
+      <p><b>I do not claim credit for these games</b></p>
+      <p>I did not create these games. I have reproduced them here to create a personal archive, and to allow them to run in HTML5.<br>By continuing to use this site, <b>you agree</b> that I do not claim the copyright for these items.</p>
+      <button class="button" id="closeBtn">I understand</button>
+      <p></p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("closeBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+window.onload = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+btn.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
