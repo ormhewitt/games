@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+      <link rel="stylesheet" href="style.css">
+
+        <meta charset='utf8'>
+        <h2>Theme Park simulations</h2>
+        <title>Tower of Terror</title>
+        <a href="index.html">Back</a>
+        <h3>Tower of Terror</h3>
+    </head>
+
+    <body>
+
+        <div id='ruffle'></div>
+
+        <script src='https://ormhewitt.github.io/dev/ruffle/ruffle.js'></script>
+
+        <script>
+
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+
+    var ruffle = window.RufflePlayer.newest(),
+
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+
+            width: width,
+
+            height: height,
+
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+
+        });
+
+
+
+    player.load({ url: url });
+
+}
+
+swfobject.embedSWF('TOT_V8.swf', 'ruffle', 1000, 730);
+
+        </script>
+        <h3>This game was originally made by 'TheMagical.nl', and has been reproduced here to run in HTML5</h3>
+        <a href="https://www.themagical.nl/flash-simulations/tower-of-terror">TheMagical.nl</a>
+    </body>
+
+</html>
