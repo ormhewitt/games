@@ -1,0 +1,79 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>Episode IV</title>
+</head>
+<body bgcolor="#000000" text="#FFFFFF" link="#3399FF" alink="#99FF99" vlink="#FF3333">
+<script language="JavaScript">
+var expdate = new Date();
+var ou = 0;  
+var endroit = 1;
+expdate.setTime(expdate.getTime() + (1000 * 60 * 60 *24 *31));  
+var InternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
+
+function rendu() {
+	var EPISODE4Obj = InternetExplorer ? EPISODE4 : document.EPISODE4;
+    var SaveGame = GetCookie("EPI4");
+    
+	if (SaveGame == "1") {
+		EPISODE4Obj.GotoFrame(387);
+	}
+	else if (SaveGame == "2") {
+		EPISODE4Obj.GotoFrame(389);
+	}	
+	else if (SaveGame == "3") {
+		EPISODE4Obj.GotoFrame(391);
+	}	
+	else if (SaveGame == "4")
+		{
+		EPISODE4Obj.GotoFrame(393);
+		EPISODE4Obj.Play();
+	}	
+ 	else {
+      alert("No Saved game");
+    }
+}
+
+function GetCookie (name) {
+      return localStorage.getItem(name);
+}
+
+function SetCookie (Name, Value, CDate, CPath) {
+  localStorage.setItem(Name, Value);
+}
+
+function EPISODE4_DoFSCommand(command, args) {
+ var EPISODE4Obj = InternetExplorer ? EPISODE4 : document.EPISODE4;
+	if (command == "where") ou = args;
+	else if (command == "save") {
+		SetCookie ("EPI4", ou, expdate, "/");
+    }
+	else if (command == "load") rendu();
+}
+
+if (navigator.userAgent && (navigator.userAgent.indexOf("MSIE")>=0) && (navigator.userAgent.indexOf("Windows")>=0)) {
+	document.write('<SCRIPT LANGUAGE="VBScript"\>\n');
+	document.write('on error resume next\n');
+	document.write('Sub EPISODE4_FSCommand(ByVal command, ByVal args)\n');
+	document.write('  call EPISODE4_DoFSCommand(command, args)\n');
+	document.write('end sub\n');
+	document.write('</' + 'SCRIPT\>\n');
+}
+</script>
+
+
+<div align='center'>
+<embed src="http://arcaneonlinegame.epizy.com/Arcane/frames_files/flash/EPISODE4FIXED.swf" name="EPISODE4" id="EPISODE4" width="936" height="680" align="center" loop="false" quality="high" salign="T" menu="false" bgcolor="#000000" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+</div>
+
+<!--
+
+// FILE ARCHIVED ON 20000622034139 AND RETRIEVED FROM THE
+// INTERNET ARCHIVE ON 20101225024253.
+// JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+// ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+// SECTION 108(a)(3)).
+//-->
+
+
+
+</body></html>

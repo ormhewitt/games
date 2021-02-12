@@ -1,0 +1,85 @@
+
+<!-- saved from url=(0089)http://web.archive.org/web/20000622034139/http://www.thethreshold.com/Arcane/episode3.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!--<base href="http://www.thethreshold.com.wstub.archive.org/Arcane/episode3.htm">--><base href=".">
+
+<title>Episode III</title>
+</head>
+<body bgcolor="#000000" text="#FFFFFF" link="#3399FF" alink="#99FF99" vlink="#FF3333">
+<script language="JavaScript">
+<!--
+var expdate = new Date();
+var ou = 0;  
+var endroit = 1;
+expdate.setTime(expdate.getTime() + (1000 * 60 * 60 *24 *31));  
+var InternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
+
+function rendu() {
+	var EPISODE3Obj = InternetExplorer ? EPISODE3 : document.EPISODE3;
+    var SaveGame = GetCookie("EPI3");
+    
+	if (SaveGame == "1") {
+		EPISODE3Obj.GotoFrame(387);
+	}
+	else if (SaveGame == "2") {
+		EPISODE3Obj.GotoFrame(389);
+	}	
+	else if (SaveGame == "3") {
+		EPISODE3Obj.GotoFrame(391);
+	}	
+	else if (SaveGame == "4")
+		{
+		EPISODE3Obj.GotoFrame(393);
+		EPISODE3Obj.Play();
+	}	
+ 	else {
+      alert("No Saved game");
+    }
+}
+
+function GetCookie (name) {
+      return localStorage.getItem(name);
+}
+
+function SetCookie (Name, Value, CDate, CPath) {
+  localStorage.setItem(Name, Value);
+}
+
+function EPISODE3_DoFSCommand(command, args) {
+ var EPISODE3Obj = InternetExplorer ? EPISODE3 : document.EPISODE3;
+	if (command == "where") ou = args;
+	else if (command == "save") {
+		SetCookie ("EPI3", ou, expdate, "/");
+    }
+	else if (command == "load") rendu();
+}
+
+if (navigator.userAgent && (navigator.userAgent.indexOf("MSIE")>=0) && (navigator.userAgent.indexOf("Windows")>=0)) {
+	document.write('<SCRIPT LANGUAGE="VBScript"\>\n');
+	document.write('on error resume next\n');
+	document.write('Sub EPISODE3_FSCommand(ByVal command, ByVal args)\n');
+	document.write('  call EPISODE3_DoFSCommand(command, args)\n');
+	document.write('end sub\n');
+	document.write('</' + 'SCRIPT\>\n');
+}
+//-->
+</script>
+
+
+<div align='center'>
+<embed src="http://arcaneonlinegame.epizy.com/Arcane/frames_files/flash/EPISODE3.swf" name="EPISODE3" id="EPISODE3" width="936" height="680" align="center" loop="false" quality="high" salign="T" menu="false" bgcolor="#000000" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+</div>
+
+
+<!--
+
+// FILE ARCHIVED ON 20000622034139 AND RETRIEVED FROM THE
+// INTERNET ARCHIVE ON 20101225024253.
+// JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+// ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+// SECTION 108(a)(3)).
+//-->
+
+
+
+</body></html>
