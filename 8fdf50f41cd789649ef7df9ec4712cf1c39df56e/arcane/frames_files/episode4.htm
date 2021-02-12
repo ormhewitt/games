@@ -5,29 +5,29 @@
 <body bgcolor="#000000" text="#FFFFFF" link="#3399FF" alink="#99FF99" vlink="#FF3333">
 <script language="JavaScript">
 var expdate = new Date();
-var ou = 0;  
+var ou = 0;
 var endroit = 1;
-expdate.setTime(expdate.getTime() + (1000 * 60 * 60 *24 *31));  
+expdate.setTime(expdate.getTime() + (1000 * 60 * 60 *24 *31));
 var InternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
 
 function rendu() {
 	var EPISODE4Obj = InternetExplorer ? EPISODE4 : document.EPISODE4;
     var SaveGame = GetCookie("EPI4");
-    
+
 	if (SaveGame == "1") {
 		EPISODE4Obj.GotoFrame(387);
 	}
 	else if (SaveGame == "2") {
 		EPISODE4Obj.GotoFrame(389);
-	}	
+	}
 	else if (SaveGame == "3") {
 		EPISODE4Obj.GotoFrame(391);
-	}	
+	}
 	else if (SaveGame == "4")
 		{
 		EPISODE4Obj.GotoFrame(393);
 		EPISODE4Obj.Play();
-	}	
+	}
  	else {
       alert("No Saved game");
     }
@@ -62,7 +62,7 @@ if (navigator.userAgent && (navigator.userAgent.indexOf("MSIE")>=0) && (navigato
 
 
 <div align='center'>
-<embed src="http://arcaneonlinegame.epizy.com/Arcane/frames_files/flash/EPISODE4FIXED.swf" name="EPISODE4" id="EPISODE4" width="936" height="680" align="center" loop="false" quality="high" salign="T" menu="false" bgcolor="#000000" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+<embed src="flash/EPISODE4FIXED.swf" name="EPISODE4" id="EPISODE4" width="936" height="680" align="center" loop="false" quality="high" salign="T" menu="false" bgcolor="#000000" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
 </div>
 
 <!--

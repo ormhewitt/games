@@ -9,29 +9,29 @@
 <script language="JavaScript">
 <!--
 var expdate = new Date();
-var ou = 0;  
+var ou = 0;
 var endroit = 1;
-expdate.setTime(expdate.getTime() + (1000 * 60 * 60 *24 *31));  
+expdate.setTime(expdate.getTime() + (1000 * 60 * 60 *24 *31));
 var InternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
 
 function rendu() {
 	var EPISODE3Obj = InternetExplorer ? EPISODE3 : document.EPISODE3;
     var SaveGame = GetCookie("EPI3");
-    
+
 	if (SaveGame == "1") {
 		EPISODE3Obj.GotoFrame(387);
 	}
 	else if (SaveGame == "2") {
 		EPISODE3Obj.GotoFrame(389);
-	}	
+	}
 	else if (SaveGame == "3") {
 		EPISODE3Obj.GotoFrame(391);
-	}	
+	}
 	else if (SaveGame == "4")
 		{
 		EPISODE3Obj.GotoFrame(393);
 		EPISODE3Obj.Play();
-	}	
+	}
  	else {
       alert("No Saved game");
     }
@@ -67,7 +67,7 @@ if (navigator.userAgent && (navigator.userAgent.indexOf("MSIE")>=0) && (navigato
 
 
 <div align='center'>
-<embed src="http://arcaneonlinegame.epizy.com/Arcane/frames_files/flash/EPISODE3.swf" name="EPISODE3" id="EPISODE3" width="936" height="680" align="center" loop="false" quality="high" salign="T" menu="false" bgcolor="#000000" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+<embed src="flash/EPISODE3.swf" name="EPISODE3" id="EPISODE3" width="936" height="680" align="center" loop="false" quality="high" salign="T" menu="false" bgcolor="#000000" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
 </div>
 
 
