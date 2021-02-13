@@ -22,6 +22,7 @@
 .closebtn:hover {
   color: black;
 }
+
 </style>
     <head>
       <link rel="stylesheet" href="style.css">
@@ -31,9 +32,18 @@
         <title>Arcane</title>
         <a href="index.html">Back</a>
         <div class="alert">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><strong class='header' style='font-family:Poppins'>You must have Ruffle installed!</strong><br>To run Arcane, you need to have Ruffle installed in your browser. Find out more <a href='ruffle.html' style='color:#fbad32'>here.</a>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><strong class='header' style='font-family:Poppins'>You must have Ruffle installed!</strong><br>To run Arcane, you need to have Ruffle installed in your browser. Find out more <a href='ruffle.html'style='color:#fbad32; text-decoration:underline' id='myBtn'>here.</a>
         </div>
         <h3 class='header'>Which season do you want?</h3>
+        <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
     </head>
 
     <body>
