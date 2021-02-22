@@ -5,6 +5,20 @@
   font-family: 'Poppins', sans-serif;
   font-weight:500;
 }
+html {
+padding-top: 120px; /* height of sticky header */
+}
+.topbar {
+  padding: 2px 16px;
+  background-color: #0d00ff;
+  color: white;
+  border-radius: 0px 0px 15px 15px;
+  margin-top: 0 !important; margin-left: 0 !important;
+  left: 0;
+  top: 0px;
+  right: 0px;
+  position: fixed;
+}
 
 .link{
   font-family: 'Poppins', sans-serif;
