@@ -111,7 +111,7 @@ Resources
 
 hr.rounded {
   border-top: 8px solid;
-  background-image: linear-gradient(to top right,#0d00ff, #00FFFF);
+  background-color: linear-gradient(to top right,#0d00ff, #00FFFF);
   border-radius: 5px;
 }
 /* The Modal (background) */
