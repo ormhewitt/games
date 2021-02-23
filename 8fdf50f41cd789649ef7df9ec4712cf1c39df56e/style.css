@@ -35,6 +35,9 @@ padding-top: 100px; /* height of sticky header */
 
 }
 
+a {
+  text-decoration:none;
+}
 .gamebar {
   padding: 2px 16px;
   background-color: #0d00ff;
