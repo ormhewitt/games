@@ -54,6 +54,11 @@ padding-top: 100px; /* height of sticky header */
 
 }
 
+.section {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
+  font-family: Poppins;
+}
+
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   color: #fff;
