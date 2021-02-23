@@ -58,6 +58,7 @@ padding-top: 100px; /* height of sticky header */
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
   font-family: Poppins;
   color:#2496be;
+  text-decoration:none;
 }
 
 .section:visited {
@@ -110,6 +111,10 @@ Resources
 
 hr.rounded {
   border-top: 8px solid #666;
+  linear-gradient(
+    to top right,
+    #0d00ff, #00FFFF
+  );
   border-radius: 5px;
 }
 /* The Modal (background) */
