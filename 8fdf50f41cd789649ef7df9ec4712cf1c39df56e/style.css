@@ -116,6 +116,7 @@ hr {
   border-top: 8px solid;
   background-image: linear-gradient(to right,#0d00ff, #00FFFF);
   border-radius: 5px;
+  visibility:hidden;
 }
 /* The Modal (background) */
 .modal {
