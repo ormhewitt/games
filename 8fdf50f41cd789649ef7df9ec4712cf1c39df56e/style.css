@@ -60,6 +60,10 @@ padding-top: 100px; /* height of sticky header */
   color:#2496be;
 }
 
+.section:visited {
+  text-decoration:none;
+}
+
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   color: #fff;
