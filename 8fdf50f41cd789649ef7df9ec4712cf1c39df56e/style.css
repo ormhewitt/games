@@ -109,9 +109,9 @@ Resources
 
 }
 
-hr.rounded {
+hr {
   border-top: 8px solid;
-  background-color: linear-gradient(to top right,#0d00ff, #00FFFF);
+  background-image: linear-gradient(to right,#0d00ff, #00FFFF);
   border-radius: 5px;
 }
 /* The Modal (background) */
