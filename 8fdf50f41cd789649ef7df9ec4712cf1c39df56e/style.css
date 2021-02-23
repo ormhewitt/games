@@ -62,6 +62,7 @@ padding-top: 100px; /* height of sticky header */
 
 .section:visited {
   text-decoration:none;
+  color:#2496be
 }
 
 /* DEMO-SPECIFIC STYLES */
