@@ -35,7 +35,7 @@ padding-top: 100px; /* height of sticky header */
 
 }
 
-a {
+a:hover, a:visited, a:active, a:link{
   text-decoration:none;
 }
 .gamebar {
