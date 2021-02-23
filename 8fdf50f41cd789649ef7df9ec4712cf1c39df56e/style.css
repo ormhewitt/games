@@ -57,6 +57,7 @@ padding-top: 100px; /* height of sticky header */
 .section {
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
   font-family: Poppins;
+  color:#2496be;
 }
 
 /* DEMO-SPECIFIC STYLES */
