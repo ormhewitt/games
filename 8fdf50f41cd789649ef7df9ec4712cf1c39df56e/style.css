@@ -112,11 +112,18 @@ Resources
 
 }
 
-hr {
-  border-top: 8px solid;
+/*hr {
+  border-top: 8px solid #666;
   background-image: linear-gradient(to right,#0d00ff, #00FFFF);
   border-radius: 5px;
-  visibility:hidden;
+}*/
+
+hr {
+  background: linear-gradient(to left, #0d00ff, #00FFFF);
+  height: 8px;
+  border-radius: 5px;
+  border:none;
+
 }
 /* The Modal (background) */
 .modal {
@@ -148,6 +155,7 @@ hr {
   border-radius:15px;
 
 }
+
 .button:focus, .button:active {
   outline: none !important;
   box-shadow: none !important;
