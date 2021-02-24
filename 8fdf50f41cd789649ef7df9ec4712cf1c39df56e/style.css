@@ -16,7 +16,7 @@
 html {
 padding-top: 100px; /* height of sticky header */
 }
-.topbar {
+.admin {
   padding: 2px 16px;
   background-color: #0d00ff;
   color: white;
@@ -29,25 +29,10 @@ padding-top: 100px; /* height of sticky header */
   background-image:
   linear-gradient(
     to top right,
-    #0d00ff, #00FFFF
+    #ff0017, #ffa800
   );
   display: block;
 
-}
-
-.return {
-  position:absolute;
-  top:0;
-  left:0;
-  background:none;
-  border:none;
-  font-size: 30px;
-  padding: 8px;
-  color:white;
-}
-.return:active {
-  outline: none;
-  border: none;
 }
 
 a:hover, a:visited, a:active, a:link{
@@ -134,7 +119,7 @@ Resources
 }*/
 
 hr {
-  background: linear-gradient(to left, #0d00ff, #00FFFF);
+  background: linear-gradient(to left, #ff0017, #ffa800);
   height: 8px;
   border-radius: 5px;
   border:none;
