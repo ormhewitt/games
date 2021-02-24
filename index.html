@@ -12,12 +12,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:wght@600&family=Raleway:wght@800&display=swap');
 
 body {
-
-	background-image: url('cactus.jpg');
+	background: linear-gradient(90deg, /*#ee7752, #e73c7e, #23a6d5, #23d5ab, #fcfa1d, #a238f5*/ #ff0017, #ffa800, #ff0000, #fff500);
+	background-size: 200% 200%;
+	animation: gradient 20s ease infinite;
+	/*background-image:   linear-gradient(
+	    to top right,
+	    #ff0017, #ffa800, #bf1fcd, #2562d6, #13de2d
+	  );/*url('cactus.jpg');
 	background-attachment: fixed;
-	color: #333;
+	color: #333;*/
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .box {
 	border-radius: 6px;
 	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
