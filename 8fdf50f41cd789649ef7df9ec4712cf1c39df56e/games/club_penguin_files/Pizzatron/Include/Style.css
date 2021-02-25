@@ -10,10 +10,10 @@ body:not(.sorry) {
 	touch-action: none;
 	user-select: none;
 }
-body:not(.frame) {
+/*body:not(.frame) {
 	background-image: url("../Assets/Parlor.png");
 	background-size: cover;
-}
+}*/
 .sorry {
 	background-color: black;
 	color: white;
@@ -495,7 +495,7 @@ body:not(.frame) {
 }
 @keyframes pizza-1 {
 	100% {
-	   background-position: -294px; 
+	   background-position: -294px;
 	}
 }
 .pizza-1 {
@@ -517,7 +517,7 @@ body:not(.frame) {
 }
 @keyframes pizza-4 {
 	100% {
-	   background-position: -299px; 
+	   background-position: -299px;
 	}
 }
 .pizza-4 {
@@ -526,7 +526,7 @@ body:not(.frame) {
 }
 @keyframes hot-1 {
 	100% {
-	   background-position: -343px; 
+	   background-position: -343px;
 	}
 }
 .hot-1 {
@@ -540,7 +540,7 @@ body:not(.frame) {
 }
 @keyframes hot-2 {
 	100% {
-	   background-position: -351px; 
+	   background-position: -351px;
 	}
 }
 .hot-2 {
@@ -549,7 +549,7 @@ body:not(.frame) {
 }
 @keyframes hot-3 {
 	100% {
-	   background-position: -312px; 
+	   background-position: -312px;
 	}
 }
 .hot-3 {
@@ -558,7 +558,7 @@ body:not(.frame) {
 }
 @keyframes hot-4 {
 	100% {
-	   background-position: -312.5px; 
+	   background-position: -312.5px;
 	}
 }
 .hot-4 {
@@ -585,7 +585,7 @@ body:not(.frame) {
 }
 @keyframes pizza-splat {
 	100% {
-	   background-position: -2468px; 
+	   background-position: -2468px;
 	}
 }
 .pizza-splat {
