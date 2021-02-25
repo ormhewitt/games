@@ -2,11 +2,12 @@
 <html lang="en">
 	<head>
 		<title>Pizzatron</title>
-		<link rel="stylesheet" href="club_penguin_files/Pizzatron/Include/Style.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="files/Pizzatron/Include/Style.css">
+		<link rel="stylesheet" href="../style.css">
 		<div class='gamebar'>
 		<button onclick="window.location.href='index.html'" class='return' style='padding-top:3px;'><i class="fas fa-arrow-circle-left"></i></button>
-		<h2 class='pageheader'>Scooby Doo: Castle games</h2>
+		<h2 class='pageheader'>Club Penguin minigames</h2>
+		<h3 class='header' style='text-align:center;'>Pizzatron 3000</h3>
 		</div>
 		<link rel="icon" type="image/png" href="https://ormhewitt.github.io/icon.png"/>
 		<script src="https://kit.fontawesome.com/ea48a04ddb.js" crossorigin="anonymous"></script>
@@ -15,24 +16,33 @@
 	<style>
 #wrap { width: 600px; height: 390px; padding: 0; overflow: hidden; }
 .parent { display: flex; }
-#frame { width: 972px; height: 764px; border: 1px solid black; }
+#frame { width: 1500px;; height: 764px; border: 1px solid black; }
 #frame { zoom: 0.95;
 	-moz-transform: scale(0.95);
 	-moz-transform-origin: 0 0;
 	display:block; text-align:center;
-	margin-top: 120px;
+	margin-top: 150px;
 	margin-left: 0px;
 	margin-right: auto;
 	text-align: center;
 }
 html{
-	padding-top: 150px;
+	padding-top: 180px;
 
+}
+
+.center {
+  margin: auto;
+  width: 75%;
+	align:center;
+	/*margin-left: 25%;
+	margin-right: 50%;*/
+  padding: ;
 }
 </style>
 	<body oncontextmenu="return false">
-		<div class='parent'>
-		<iframe id='frame'class="game-box" src="club_penguin_files/Pizzatron/index.html" style='margin'></iframe>
+		<div class='center'>
+		<iframe id='frame'class="game-box" src="files/Pizzatron/index.html" style='text-align:center;'></iframe>
 		<script src="Include/Scripts/MainWindow.js"></script>
 	</div>
 	</body>
