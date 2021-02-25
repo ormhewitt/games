@@ -10,7 +10,7 @@ body:not(.sorry) {
 	user-select: none;
 }
 body:not(.frame) {
-	background-image: url("../Assets/Background.png");
+	/*background-image: url("../Assets/Background.png");*/
 	background-size: cover;
 }
 .sorry {

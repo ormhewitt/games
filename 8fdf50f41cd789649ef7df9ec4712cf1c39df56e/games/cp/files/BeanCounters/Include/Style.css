@@ -11,7 +11,7 @@ body {
 	user-select: none;
 }
 body:not(.frame) {
-	background-image: url("../Assets/Shop.png");
+	/*background-image: url("../Assets/Shop.png");*/
 	background-size: cover;
 }
 .loading-wrapper {
