@@ -1,0 +1,24 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Identisafe: Verify yourself",
+  "short_name": "Identisafe: Ver",
+  "scope": "/secure/",
+  "display": "browser",
+  "start_url": "https://ormhewitt.github.io/secure/",
+  "background_color": "#000000",
+  "theme_color": "transparent",
+  "description": "",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": "false",
+  "icons": [
+    {
+      "src": "https://ormhewitt.github.io/icon.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "url": "https://ormhewitt.github.io/secure/",
+  "generated": true
+}
