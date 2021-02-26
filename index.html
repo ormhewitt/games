@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<link rel="canonical" href="https://ormhewitt.github.io/secure/" />
+
 <link rel="icon" type="image/png" href="https://ormhewitt.github.io/icon.png"/>
 <title>Identisafe: Verify yourself</title>
 <script src="https://kit.fontawesome.com/ea48a04ddb.js" crossorigin="anonymous"></script>
@@ -100,7 +102,14 @@ div.vertical {
 </style>
 
 <body>
+	<script>
+	  // register ServiceWorker, remember to use absolute path!
+	  if (navigator.serviceWorker) {
+	    navigator.serviceWorker.register('https://ormhewitt.github.io/secure/sw.js', {scope: '/{repository}/'})
+	  }
 
+	  // --- Application code here ---
+	  </script>
 	<div id="loginbox" class="lightbox" >
 		<div class="horizontal">
 			<div class="vertical">
