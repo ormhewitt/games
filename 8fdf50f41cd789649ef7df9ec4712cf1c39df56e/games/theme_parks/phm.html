@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+      <link rel="stylesheet" href="../style.css">
+      <link rel="icon" type="image/png" href="https://ormhewitt.github.io/icon.png"/>
+      <script src="https://kit.fontawesome.com/ea48a04ddb.js" crossorigin="anonymous"></script>
+
+
+        <meta charset='utf8'>
+        <div class='gamebar'>
+        <button onclick="window.location.href='index.html'" class='return' style='padding-top:3px;'><i class="fas fa-arrow-circle-left"></i></button>
+        <h2 class='pageheader'>Theme Park simulations</h2>
+      </div>
+        <title>Phantom manor</title>
+        <h3 class='header'>Phantom manor</h3>
+        <link rel="icon" type="image/png" href="https://ormhewitt.github.io/icon.png"/>
+
+    </head>
+
+    <body>
+
+        <div id='ruffle'></div>
+
+        <script src='https://ormhewitt.github.io/dev/ruffle/ruffle.js'></script>
+
+        <script>
+
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+
+    var ruffle = window.RufflePlayer.newest(),
+
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+
+            width: width,
+
+            height: height,
+
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+
+        });
+
+
+
+    player.load({ url: url });
+
+}
+
+swfobject.embedSWF('phm.swf', 'ruffle', 1000, 660);
+
+        </script>
+        <p><strong style='font-weight:600;'>This game was originally made by 'TheMagical.nl', and has been reproduced here to run in HTML5</strong></p>
+        <a href="https://www.themagical.nl/flash-simulations/phantom-manor">TheMagical.nl</a>
+    </body>
+
+</html>
